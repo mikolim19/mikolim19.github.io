@@ -5,205 +5,194 @@
     <title>Miko Lim | Software Developer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            max-width: 900px;
-            line-height: 1.6;
-            color: #333;
-        }
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        h1 {
-            color: #2A2348;
-            margin-bottom: 5px;
-        }
-
-        h2 {
-            border-bottom: 2px solid #2A2348;
-            padding-bottom: 5px;
-            margin-top: 40px;
-        }
-
-        .subtitle {
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .project {
-            margin-bottom: 25px;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: #2A2348;
-        }
-
-        a {
-            color: #2A2348;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .contact-icons {
-            margin-top: 15px;
-        }
-
-        .contact-icons a {
-            font-size: 28px;
-            margin-right: 20px;
-            color: #2A2348;
-            transition: 0.3s;
-        }
-
-        .contact-icons a:hover {
-            color: #555;
-            transform: scale(1.2);
-        }
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Miko Lim Yu Hui</h1>
-    <!-- <p class="subtitle">
-        Software Developer | Backend & Data Systems Engineering
-    </p> -->
 
-    <section>
+    <div class="container">
+
+        <h1>Miko Lim Yu Hui</h1>
+        <!-- <p class="subtitle">
+    Software Developer | Backend & Distributed Systems Engineering
+  </p> -->
+
         <h2>About Me</h2>
-        <p>
+        <div class="card">
             Computing Science undergraduate at Singapore Institute of Technology - University of Glasgow (SIT-UoG),
             graduating August 2026. Strong background in frontend and backend development.
-        </p>
-    </section>
-
-    <section>
-        <h2>Technical Skills</h2>
-        <p><span class="highlight">Languages:</span> Java, Python, SQL, JavaScript, C#, C++, C, Kotlin</p>
-        <p><span class="highlight">Frameworks & Technologies:</span> React, Angular, .NET, Node.js, Ionic</p>
-        <p><span class="highlight">Databases:</span> MSSQL, MySQL, Relational Databases</p>
-        <p><span class="highlight">Data & Analytics:</span> QlikSense, Tableau, QlikView, SQL Data Transformation</p>
-        <p><span class="highlight">Tools:</span> Git, RESTful API Development, UAT Testing & Debugging</p>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Enterprise RAG Compliance Chatbot</h3>
-            <p>
-                Designed and developed a Retrieval-Augmented Generation (RAG) system
-                to automate compliance questionnaire responses using
-                <span class="highlight">FastAPI, Qdrant, BM25 hybrid retrieval, MSSQL, and React</span>.
-            </p>
-            <p>
-                Implemented vector-based semantic search combined with keyword retrieval
-                to improve answer accuracy and reduce hallucination. Built ingestion pipelines
-                for structured documents and implemented evaluation metrics such as
-                Recall@k, MAP, and MRR for performance benchmarking.
-            </p>
-            <p>
-                Designed secure authentication workflows with token hashing,
-                role-based access control, and production-ready backend architecture.
-            </p>
         </div>
 
-        <div class="project">
-            <h3>Aftershock Prediction System</h3>
-            <p>
-                Built a scalable cloud-native distributed system using
-                <span class="highlight">Python, Docker, Kubernetes, and Kafka</span>
-                to process historical and real-time seismic data for AI-driven
-                aftershock prediction and alerting.
-            </p>
-            <p>
-                Designed for real-time responsiveness and distributed processing to
-                support disaster preparedness and risk mitigation.
-            </p>
-        </div>
+        <section>
+            <h2>Technical Skills</h2>
 
-        <div class="project">
-            <h3>TYJS ERP System</h3>
-            <p>
-                Developed a full-stack enterprise web application using
-                <span class="highlight">C#, ASP.NET (MVVM) and MSSQL</span>
-                to manage HR and business workflows.
-            </p>
-            <p>
-                Implemented structured backend architecture and database integration
-                to support enterprise-level operations.
-            </p>
-        </div>
+            <div class="card skills">
+                <h3>Languages</h3>
+                <span>Java</span>
+                <span>Python</span>
+                <span>SQL</span>
+                <span>JavaScript</span>
+                <span>C#</span>
+                <span>C++</span>
+                <span>C</span>
+                <span>Kotlin</span>
+            </div>
 
-        <div class="project">
-            <h3>Flight Map Routing System</h3>
-            <p>
-                Designed and implemented graph algorithms in
-                <span class="highlight">Python</span>
-                to optimise multi-criteria flight route computation.
-            </p>
-            <p>
-                Applied data structures and algorithmic optimisation techniques
-                to improve route efficiency.
-            </p>
-        </div>
+            <div class="card skills">
+                <h3>Frameworks & Technologies</h3>
+                <span>React</span>
+                <span>Angular</span>
+                <span>.NET</span>
+                <span>Node.js</span>
+                <span>Ionic</span>
+            </div>
 
-    </section>
+            <div class="card skills">
+                <h3>Databases</h3>
+                <span>MSSQL</span>
+                <span>MySQL</span>
+                <span>Relational Databases</span>
+            </div>
 
-    <section>
-        <h2>Work Experience</h2>
+            <div class="card skills">
+                <h3>Data & Analytics</h3>
+                <span>QlikSense</span>
+                <span>Tableau</span>
+                <span>QlikView</span>
+                <span>SQL Data Transformation</span>
+            </div>
 
-        <p>
-            <span class="highlight">HSBC – Data Management Specialist (Intern & Contract)</span><br>
+            <div class="card skills">
+                <h3>Tools & Practices</h3>
+                <span>Git</span>
+                <span>RESTful APIs</span>
+                <span>UAT Testing</span>
+                <span>Debugging</span>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <div class="card">
+                <h3>Enterprise RAG Compliance Chatbot</h3>
+                <p>
+                    Designed and developed a Retrieval-Augmented Generation (RAG) system
+                    to automate compliance questionnaire responses using
+                    <span class="highlight">FastAPI, Qdrant, hybrid BM25 retrieval, MSSQL, and React</span>.
+                </p>
+                <p>
+                    Implemented vector-based semantic search combined with keyword retrieval
+                    to improve answer accuracy and reduce hallucination. Built ingestion pipelines
+                    for structured documents and implemented evaluation metrics such as
+                    Recall@k, MAP, and MRR for performance benchmarking.
+                </p>
+                <p>
+                    Designed secure authentication workflows with token hashing,
+                    role-based access control, and production-ready backend architecture.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Aftershock Prediction System</h3>
+                <p>
+                    Built a scalable cloud-native distributed system using
+                    <span class="highlight">Python, Docker, Kubernetes, and Apache Kafka</span>
+                    to process historical and real-time seismic data for AI-driven
+                    aftershock prediction and alerting.
+                </p>
+                <p>
+                    Built AI-driven prediction pipelines and integrated real-time alerting
+                    mechanisms to support rapid disaster response and risk mitigation.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>TYJS ERP System</h3>
+                <p>
+                    Developed a full-stack enterprise web application using
+                    <span class="highlight">C#, ASP.NET (MVVM) and MSSQL</span>
+                    to manage HR workflows and business operations.
+                </p>
+                <p>
+                    Implemented structured backend architecture, database integration,
+                    and business rule validation for enterprise-grade reliability.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Flight Map Routing System</h3>
+                <p>
+                    Designed and implemented graph algorithms in
+                    <span class="highlight">Python</span>
+                    to optimise multi-criteria flight route computation.
+                </p>
+                <p>
+                    Applied shortest-path and weighted graph techniques to improve
+                    routing efficiency and algorithmic performance.
+                </p>
+            </div>
+
+        </section>
+
+        <h2>Experience</h2>
+
+        <div class="card">
+            <h3>HSBC – Data Management Specialist (Intern & Contract)</h3>
             Developed SQL-based dashboards using QlikSense to support cross-departmental analytics.
             Participated in UAT testing, issue resolution, and regulatory data processes.
-        </p>
+        </div>
 
-        <p>
-            <span class="highlight">HSBC – Policy Servicing Associate</span><br>
+        <div class="card">
+            <h3>HSBC – Policy Servicing Associate</h3>
             Managed business-as-usual (BAU) insurance policy servicing operations while
             ensuring regulatory compliance through Customer Due Diligence (CDD).
             Supported UAT testing and participated in system enhancement releases and live deployment cycles.
-        </p>
+        </div>
 
-        <p>
-            <span class="highlight">RSM Singapore – Integrated Work Study Programme</span><br>
+        <div class="card">
+            <h3>RSM Singapore – Integrated Work Study Programme</h3>
             Designed and executed test cases for web and mobile applications,
             validated workflows, and tracked system defects during UAT cycles.
-        </p>
+        </div>
 
-    </section>
+        <section>
+            <h2>Education</h2>
+            <div class="card">
+                BSc (Hons) Computing Science – Singapore Institute of Technology - University of Glasgow (SIT-UoG)<br>
+                Expected Graduation: August 2026
+            </div>
+            <div class="card">
+                Diploma in Information Technology – Temasek Polytechnic (GPA: 3.56/4.0)
+            </div>
+        </section>
 
-    <section>
-        <h2>Education</h2>
-        <p>
-            BSc (Hons) Computing Science – Singapore Institute of Technology - University of Glasgow (SIT-UoG)<br>
-            Expected Graduation: August 2026
-        </p>
-        <p>
-            Diploma in Information Technology – Temasek Polytechnic (GPA: 3.56/4.0)
-        </p>
-    </section>
-
-    <section>
         <h2>Contact</h2>
+
         <div class="contact-icons">
             <a href="mailto:mikolimyuhui2002@gmail.com" target="_blank">
                 <i class="fas fa-envelope"></i>
             </a>
+
             <a href="https://www.linkedin.com/in/miko-lim-yu-hui/" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a>
+
             <a href="https://github.com/mikolim19" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
         </div>
-    </section>
+
+    </div>
 
 </body>
 
